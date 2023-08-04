@@ -1,0 +1,84 @@
+<!-- <div>
+    <form class="form-container">
+        <h3 class="label">Sign Up Form</h3><br>
+        <mat-form-field>
+            <input matInput placeholder="First Name" required>
+            <mat-error *ngIf="signupForm.get('name')?.hasError('required') && signupForm.get('name')?.touched">Please enter a valid First Name.</mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field>
+            <input matInput placeholder="Last Name" required>
+            <mat-error *ngIf="signupForm.get('lastname')?.hasError('required') && signupForm.get('lastname')?.touched">Please enter a valid Last Name.</mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field>
+            <input matInput type="email" placeholder="Email" required>
+            <mat-error *ngIf="signupForm.get('email')?.hasError('required') && signupForm.get('email')?.touched">Please enter a valid Email.</mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field>
+            <input matInput formControlName="panNumber" placeholder="PAN Card Number">
+            <mat-error *ngIf="signupForm.get('panNumber')?.hasError('required') && signupForm.get('panNumber')?.touched">Please enter a valid Pan Number.</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput type="password" placeholder="Password" required>
+            <mat-error *ngIf="signupForm.get('password')?.hasError('required') && signupForm.get('password')?.touched">Please enter a password.</mat-error>
+        </mat-form-field>
+
+        <br><br>
+        <button mat-raised-button color="accent">Sign Up</button>
+
+    </form>
+</div><br>
+
+
+
+
+<h2 class="center">---------------------------------------------</h2>
+ -->
+<div class="img">
+<button (click)="signup()" mat-raised-button color="accent">Back</button>
+<div class="reactiveform">
+    <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="form-container2"><br>
+        <h3 class="label">Sign Up Form</h3>
+        <div>
+            <label for="firstname">First Name </label><br>
+            <input class="input" type="text" id="firstname" formControlName="firstname">
+        </div><br>
+
+        <div>
+            <label for="lastname">Last Name </label><br>
+            <input type="text" id="lastname" formControlName="lastname">
+        </div><br>
+
+        <div>
+            <label for="email">Email </label><br>
+            <input type="email" id="email" formControlName="email">
+        </div><br>
+
+        <div>
+            <label for="panNumber">Pan Number </label><br>
+            <input type="text" id="panNumber" formControlName="panNumber">
+        </div><br>
+
+        <div>
+            <label for="password">Password </label><br>
+            <input type="password" id="password" formControlName="password">
+        </div><br>
+
+        <label>
+            <input type="radio" name="gender" value="male">
+            Male
+          </label>
+          
+          <label>
+            <input type="radio" name="gender" value="female">
+            Female
+          </label>
+          <br><br>
+
+        <button type="submit" [disabled]="signupForm.invalid" routerLink="/owner/ownersuccess" mat-raised-button color="primary" >Sign Up</button>
+    </form>
+</div>
+</div>

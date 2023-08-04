@@ -1,0 +1,47 @@
+.matclasssignup{
+    text-align: center; 
+}
+.reactiveform{
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 19px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: .0178571429em;
+}
+.center{
+    text-align: center;
+}
+.label{
+    color: rgb(23, 65, 161);
+    background-color: rgb(173, 182, 228);
+}
+/* .form-container{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 403px;;
+    width: 397px;
+    padding: 28px 6px;
+    background-color: #e0e0e0;
+} */
+.form-container2{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 411px;;
+    width: 325px;
+    padding: 37px 42px;
+    background-image: url('https://tse3.mm.bing.net/th?id=OIP.XL1AFdZ7jgbK8r0huRl77wHaEK&pid=Api&P=0&h=180');
+    
+    background-color: #e0e0e0;
+}
+.input{
+    padding :3px 2px;
+}
+.img{
+    background-image: url('http://getwallpapers.com/wallpaper/full/c/3/4/1125285-pebble-beach-wallpaper-1920x1080-for-windows-10.jpg');
+    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}

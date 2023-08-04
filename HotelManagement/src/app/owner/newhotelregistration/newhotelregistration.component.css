@@ -1,0 +1,23 @@
+.container{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 411px;
+    width: 556px;;
+    padding: 40px 22px;
+    background-color: #e0e0e0;
+    line-height: 44px;
+}
+.heading{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.full-width{
+    padding: 2px 2px;
+    width: 78%;
+}
+.input{
+    padding: 1px 32px;
+}

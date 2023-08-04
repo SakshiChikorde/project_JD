@@ -1,0 +1,45 @@
+.form-container{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 219px;
+    width: 300px;
+    padding: 28px 6px;
+    background-color: #e0e0e0;
+}
+.heading{
+    text-align: center;
+    font-size: large;
+    color: darkslateblue;
+    background-color: rgb(227, 228, 230);
+    
+}
+.img{
+    background-image: url('https://tse1.mm.bing.net/th?id=OIP.s6TZLyblDJIg5wvpnRZjDwHaEK&pid=Api&P=0&h=180');
+    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+.forget{
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+  }
+.button {
+    margin-top: 16px;
+  }
+  .newowner{
+    border-bottom-color: chartreuse;
+  }
+  .form-container2{
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    height: 252px;
+    width: 300px;
+    padding: 44px 27px;
+    background-color: #e0e0e0;
+  }

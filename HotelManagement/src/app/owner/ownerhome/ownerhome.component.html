@@ -1,0 +1,58 @@
+<!-- <div>
+    <button (click)="login()">Login</button><br><br>
+    <a routerLink="/owner/ownersignup">Don't have account? Please SignUp!</a>
+</div> -->
+
+
+
+<div class="img">
+    <br>
+    <button mat-raised-button color="accent" routerLink="">Back</button><br><br>
+    
+    <form [formGroup]="loginForm" *ngIf="!showForgetPasswordForm" (ngSubmit)="onSubmit()" class="form-container2">
+        <h2 class="heading"> Login</h2>
+        <mat-form-field>
+            <input matInput placeholder="Username" formControlName="username">
+            <mat-error *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched">
+                Please enter a valid username.
+            </mat-error>
+        </mat-form-field><br>
+
+        <mat-form-field>
+            <input matInput type="password" placeholder="Password" formControlName="password">
+            <mat-error *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+                Please enter a password.
+            </mat-error>
+        </mat-form-field><br>
+
+        <button (click)="login()" mat-raised-button color="primary" type="submit"
+            [disabled]="loginForm.invalid">Login</button>
+    </form>
+    <br>
+    
+
+    <div>
+        
+        <form [formGroup]="forgotPasswordForm" *ngIf="showForgetPasswordForm" (submit)="onSubmit()"
+            class="form-container2">
+            <h2 class="heading">Forgot Password</h2><br>
+            <mat-form-field appearance="outline">
+                <mat-label>New Password</mat-label>
+                <input matInput type="newpass" formControlName="newpass">
+                <!-- <mat-error *ngIf="forgotPasswordForm.get('email')?.invalid && forgotPasswordForm.get('email')?.touched">Please enter a valid email.</mat-error> -->
+            </mat-form-field><br>
+            <mat-form-field appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input matInput type="confirmpass" formControlName="confirmpass">
+            </mat-form-field><br>
+
+            <button mat-raised-button color="primary" (click)="reset()" type="submit">Reset
+                Password</button>
+        </form><br><br>
+    </div>
+    <div class="forget"><button (click)="forgetPassword()" mat-raised-button color="accent"
+            *ngIf="forgotPassword">Forget Password</button>
+        <br><br>
+        <button mat-raised-button color="accent" routerLink="/owner/ownersignup" class="newowner">New Owner ?</button>
+    </div>
+</div>
