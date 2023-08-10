@@ -1,6 +1,25 @@
 {
   "admin": [],
   "user": [],
-  "owner":[],
-  "hotelDetails":[]
+  "owner": [
+    {
+      "UserName": "Sakshi",
+      "LastName": "Chikorde",
+      "Email": "sakshi@gmail.com",
+      "Password": "sakshi",
+      "PanNumber": "CKPPC0385H",
+      "Gender": "",
+      "id": 1
+    },
+    {
+      "UserName": "Pooja ",
+      "LastName": "Avdhut",
+      "Email": "pooja@gmail.com",
+      "Password": "pooja123",
+      "PanNumber": "CKWPK9885H",
+      "Gender": "",
+      "id": 2
+    }
+  ],
+  "hotelDetails": []
 }

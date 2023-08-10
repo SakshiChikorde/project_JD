@@ -78,7 +78,7 @@
           </label>
           <br><br>
 
-        <button type="submit" [disabled]="signupForm.invalid" routerLink="/owner/ownersuccess" mat-raised-button color="primary" >Sign Up</button>
+        <button [disabled]="signupForm.invalid" mat-raised-button color="primary" (click)="submit()" >Sign Up</button>
     </form>
 </div>
 </div>

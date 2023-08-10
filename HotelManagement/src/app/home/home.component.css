@@ -1,13 +1,15 @@
-.img{
+.img {
     background-image: url('https://wallpapercave.com/wp/wp1846070.jpg');
     height: 100%;
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
 }
-.heading{
+
+.heading {
     color: black;
     font-weight: bold;
 }
+
 .spacer {
     flex: 1 1 auto;
-  }
+}

@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./ownersuccess.component.css']
 })
 export class OwnersuccessComponent {
-
+  
   constructor(private router: Router){}
   
   hotelregistration(){
